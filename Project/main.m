@@ -1,7 +1,6 @@
 clear all, close all
 
-exp_number='1';
+exp_number='2';
 name=strcat('results',exp_number,'.mat');
-%data=experiment_fun('random');
-data=experiment_fun('forced');
+data=experiment_function;
 save(name,'-struct','data')
